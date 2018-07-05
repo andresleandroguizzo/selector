@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Selectors</title>
+	<style>
+	/*Aquesta primera serveix per a l'apartat a) i d)*/
+	div p:only-of-type {
+		color: red;
+		font-size: 30px;
+	}
+	div.first p.first {
+		color: green;
+		font-size: 30px;
+	}
+	ul li:nth-child(2) {
+		color: pink;
+		font-size: 30px;
+	}
+	
+	p:nth-last-of-type(3) {
+		color: blue;
+		font-size: 30px;
+	}
+	</style>
+</head>
+<body>
+	<div>
+		<p>A)</p>
+	</div>
+
+	<div class="first">
+		<p class="first">B)</p>
+		<p>b</p>
+	</div>
+
+	<ul>
+		<li>c</li>
+		<li>C)</li>
+		<li>c</li>
+	</ul>
+
+	<div>
+		<p>D)</p>
+		<form>
+		<p>D)</p>
+		</form>
+	</div>
+	<p>d</p>
+
+
+	<div class="second">
+		<p id="first" class="second third">e
+			<p class="second third">e
+				<p class="third"> E</p>
+			</p>
+		</p>
+	<div>
+
+	<div> Per a la pregunta bonus, el que passa es que no podem seleccionar
+	la id ja que en cada id hi ha un espai.</div>
+</body>
+</html>
